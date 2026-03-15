@@ -67,24 +67,6 @@ const Index = () => {
         </div>
 
 
-        {/* Social */}
-        <div className="flex justify-center gap-5">
-          {[
-            { icon: Linkedin, href: "#" },
-            { icon: Instagram, href: "#" },
-            { icon: Twitter, href: "#" },
-          ].map(({ icon: Icon, href }, i) => (
-            <a
-              key={i}
-              href={href}
-              className="text-white/40 hover:text-white transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon className="h-5 w-5" />
-            </a>
-          ))}
-        </div>
       </div>
     </div>
   );
