@@ -66,19 +66,6 @@ const Index = () => {
           ))}
         </div>
 
-        {/* Email form */}
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-14">
-          <Input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="bg-white/10 border-white/20 text-white placeholder:text-white/40 focus-visible:ring-white/30"
-          />
-          <Button type="submit" className="bg-white text-black hover:bg-white/90 shrink-0">
-            <Mail className="mr-2 h-4 w-4" /> Notify Me
-          </Button>
-        </form>
 
         {/* Social */}
         <div className="flex justify-center gap-5">
