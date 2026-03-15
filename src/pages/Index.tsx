@@ -44,7 +44,7 @@ const Index = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-2xl mx-auto animate-fade-in">
         {/* Brand */}
-        <p className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Caruso Capital</p>
+        <p className="text-sm uppercase tracking-[0.4em] text-white/60 mb-4">Ancolia Holding</p>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
           Under Construction
         </h1>
