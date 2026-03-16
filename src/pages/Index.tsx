@@ -19,14 +19,6 @@ function useCountdown() {
 
 const Index = () => {
   const countdown = useCountdown();
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    toast({ title: "You're on the list!", description: "We'll notify you when we launch." });
-    setEmail("");
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
