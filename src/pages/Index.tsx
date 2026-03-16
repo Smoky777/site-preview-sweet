@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { toast } from "@/hooks/use-toast";
-import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
 
-const TARGET_DATE = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).getTime();
+const TARGET_DATE = new Date("2025-05-01T00:00:00").getTime();
 
 function useCountdown() {
   const [now, setNow] = useState(Date.now());
@@ -23,14 +19,6 @@ function useCountdown() {
 
 const Index = () => {
   const countdown = useCountdown();
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    toast({ title: "You're on the list!", description: "We'll notify you when we launch." });
-    setEmail("");
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
